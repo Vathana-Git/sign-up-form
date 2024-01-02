@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/InterVariable.woff2");
+}
+
+:root {
+  font-family: "Inter", 'Segoe UI', sans-serif, system-ui;
+  font-size: 16px;
+}
+
+body {
+  background-color: rgb(236, 236, 236)
+}
+
+.body-container {
+  display: flex;
+  align-items: center;
+}
+
+.side-container {
+
+  height: 100vh;
+  width: 30lh;
+
+  background-image: url(images/image.jpg);
+  background-size: auto 100%;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgb(0, 0, 0, 40%);
+  width: 100%;
+  height: 110px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.logo-text {
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.image-credit,
+.image-credit a {
+  color: rgb(235, 235, 235);
+  margin-top: auto;
+  margin-bottom: 1em;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  gap: 32px;
+  background-color: rgb(236, 236, 236)
+}
+
+.hero-container > p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+form {
+  color: white;
+  background-color: rgb(76, 87, 97);
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+form label {
+  font-size: 14px;
+}
+
+form input {
+  width: 300px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+  border: 1px solid rgb(0, 132, 255);
+}
+
+.form-row {
+  display: flex;
+  gap: 64px
+}
+
+.field-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-label {
+  font-size: 14px;
+  color: red;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.bottom-container {
+  padding: 40px;
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  width: 180px;
+  height: 2.5em;
+  background-color:rgb(76, 87, 97);
+  border: 1px solid rgb(76, 87, 97);
+  border-radius: 6px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.bottom-container a {
+  color: rgb(76, 87, 97);
+  font-weight: 700;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="body-container">
+    <div class="side-container">
+      <div class="logo-container">
+        <img src="images/logo.png" alt="The Art House Logo" class="logo">
+        <div class="logo-text">ART HOUSE</div>
+      </div>
+      <div class="image-credit">
+        Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/man-playing-guitar-painting-SlxfDF7YXCk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="hero-container">
+        <p>This is not a real online service. You know something like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <em>now</em> to get beautiful pieces of art from Art House!</p>
+      </div>
+      <div class="form-container">
+        <form action="" method="get" id="sign-up-form">
+          <div class="form-row">
+            <div class="field-container">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="first-name" maxlength="30" required>
+            </div>
+            <div class="field-container">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="last-name" maxlength="30" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field-container">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="field-container">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" maxlength="20" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field-container">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" required>
+              <div class="error-label hide">* Passwords do not match</div>
+            </div>
+            <div class="field-container">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+          </div>                            
+        </form>
+      </div>
+      <div class="bottom-container">
+        <button type="submit" form="sign-up-form" id="submit-button">Create Account</button>
+        <div class="log-in">
+          <span>Already have an account?</span>
+          <a href="#">Log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
